@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="no.hiof.sclarsen.Controller.FilmInfoController">
+    <children>
+        <AnchorPane layoutY="7.0" prefHeight="400.0" prefWidth="600.0">
+            <children>
+                <Label layoutX="39.0" layoutY="54.0" text="Tittel:" />
+                <Label layoutX="31.0" layoutY="181.0" text="Beskrivelse:" />
+                <Label layoutX="23.0" layoutY="275.0" text="Utgivelsesdato" />
+                <Label layoutX="39.0" layoutY="327.0" text="Spilletid:" />
+                <TextArea fx:id="txtBeskrivelse" layoutX="118.0" layoutY="129.0" prefHeight="120.0" prefWidth="365.0" />
+                <TextField fx:id="txtTittel" layoutX="121.0" layoutY="50.0" prefHeight="25.0" prefWidth="365.0" />
+                <TextField fx:id="txtSpilletid" layoutX="118.0" layoutY="323.0" prefHeight="25.0" prefWidth="365.0" />
+                <Button fx:id="btnAvbryt" layoutX="460.0" layoutY="356.0" mnemonicParsing="false" onAction="#avbrytData" text="Avbryt" />
+                <Button fx:id="btnLagre" layoutX="524.0" layoutY="356.0" mnemonicParsing="false" onAction="#lagreData" text="Lagre" />
+                <DatePicker fx:id="datoUtgivelse" layoutX="118.0" layoutY="266.0" prefHeight="34.0" prefWidth="226.0" />
+            </children>
+        </AnchorPane>
+    </children>
+
+</AnchorPane>
